@@ -25,4 +25,4 @@ services:
     entrypoint: "/bin/bash -c /configure-keycloak.sh"
     env_file: config/keycloak.env
     volumes:
-- ./config/configure-keycloak.sh:/configure-keycloak.sh
+    - ./config/configure-keycloak.sh:/configure-keycloak.sh
